@@ -1,0 +1,62 @@
+/* ... (ваш текущий CSS код) */
+body {
+  background-color: #f8f8f8;
+  /* Нейтральный светлый фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Чтобы счетчик был посередине страницы */
+}
+
+.outerwrapp {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  /* Фон счетчика */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Небольшая тень */
+}
+
+.display-amount {
+  font-size: 2em;
+  color: #333;
+  transition: color 0.3s;
+  /* Добавляем плавную анимацию смены цвета */
+}
+
+.increment,
+.decrement {
+  font-size: 25px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  /* Добавляем анимацию смены цвета и масштаба */
+}
+
+.increment:hover,
+.decrement:hover {
+  transform: scale(1.02);
+  /* Немного увеличиваем размер кнопки при наведении */
+}
+
+.increment {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.decrement {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.increment:active,
+.decrement:active {
+  transform: scale(0.95);
+  /* Уменьшаем размер кнопки при нажатии */
+}
